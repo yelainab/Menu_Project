@@ -1,0 +1,68 @@
+html{
+    background: #212121;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.header{
+    grid-area: header;
+    background: url(thai.png) 100%/cover ;
+}
+.body{
+    grid-area: body;
+    background: rgb(108, 24, 17);
+    text-align: center;
+    color: rgb(242, 177, 78);
+}
+
+.container{
+    display: grid;
+    height: 1200px;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas: 
+    'header header header'
+    'body body body';
+    padding: 0px 5px;
+}
+
+.overlay{
+    background: rgb(108, 24, 17);
+    height: 100px;
+    margin-top: 395px;
+    grid-column: header-start / body-end;
+    grid-row: header-start / body-end;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+}
+
+.title{
+    color: rgb(242, 177, 78);
+    background: transparent;
+    height: 100px;
+    margin-top: 210px;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 5px 5px 10px #212121;
+    grid-column: header-start / body-end;
+    grid-row: header-start / body-end;
+    font-family: 'Acme', sans-serif;
+}
+
+div.col-1-2{
+    width: 50%;
+    float: left;
+}
+
+#mItem::before{
+    content: "";
+    display: block;
+    border: 1px solid rgb(242, 177, 78);
+    width: 75%;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+p{
+    text-align: initial;
+    margin-left: 260px;
+}
