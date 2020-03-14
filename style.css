@@ -17,8 +17,8 @@ html{
 
 .container{
     display: grid;
-    height: 1200px;
-    grid-template-rows: 2fr 3fr;
+    height: 95%;
+    grid-template-rows: 500px 2500px;
     grid-template-areas: 
     'header header header'
     'body body body';
@@ -28,7 +28,7 @@ html{
 .overlay{
     background: rgb(108, 24, 17);
     height: 100px;
-    margin-top: 395px;
+    margin-top: 400px;
     grid-column: header-start / body-end;
     grid-row: header-start / body-end;
     border-top-left-radius: 400px;
@@ -53,16 +53,39 @@ div.col-1-2{
     float: left;
 }
 
-#mItem::before{
-    content: "";
-    display: block;
-    border: 1px solid rgb(242, 177, 78);
-    width: 75%;
-    margin: 10px auto;
-    margin-bottom: 0px;
-    font-size: 45px;
-}
+
 p{
     text-align: initial;
     margin-left: 260px;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.body h1{
+    padding: 10px 0px;
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+}
+
+#sItem{
+    padding: 10px 0px;
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+}
+.item{
+    margin-bottom: 10px;
+}
+
+.line{
+    height: 2250px;
+    border: 6px double rgb(242, 177, 78);
+    padding: 20px 0px;
+    margin: 15px;
 }
